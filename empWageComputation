@@ -14,3 +14,13 @@ then
 else
 	echo "Employee $employeename is absent"
 fi
+
+
+#branch calculatedailyemployeewage
+
+WAGE_PER_HOUR=20
+FULL_TIME_HOUR=8
+
+totalwage=$(($WAGE_PER_HOUR * $FULL_TIME_HOUR))
+ 
+echo "The employee $employeename has a daily wage of $totalwage Rupees"
