@@ -35,3 +35,18 @@ parttimewage=$(($WAGE_PER_HOUR * $PART_TIME_HOUR))
 echo "The part time employee $employeename has a daily wage of $parttimewage Rupees"
 }
 
+#branch switchstatement
+echo " Please select your prefered option "
+echo " 1.To check employee attendance"
+echo " 2.To calculate daily wage"
+echo " 3.To calculate part time wage"
+read -p "Enter your option no." option
+
+case $option in
+    1) checkemployeepresentorabsent
+    ;;
+    2) calculatedailyemployeewage
+    ;;
+    3) parttimeemployeewage
+    ;;
+esac
