@@ -50,3 +50,9 @@ case $option in
     3) parttimeemployeewage
     ;;
 esac
+
+#branch calculatewageforamonth
+
+WORKING_DAYS_PER_MONTH=20
+totalwagepermonth=$(($WAGE_PER_HOUR * $FULL_TIME_HOU * $WORKING_DAYS_PER_MONTH))
+echo "The total wage per month is $totalwagepermonth"
