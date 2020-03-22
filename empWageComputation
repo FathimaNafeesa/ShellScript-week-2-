@@ -3,7 +3,7 @@ echo "                                                                          
 
 
 #branch checkemployeepresentorabsent
-
+function checkemployeepresentorabsent {
 echo "Enter employee name"
 read employeename
 
@@ -14,13 +14,14 @@ then
 else
 	echo "Employee $employeename is absent"
 fi
-
+}
 
 #branch calculatedailyemployeewage
-
+function calculatedailyemployeewage {
 WAGE_PER_HOUR=20
 FULL_TIME_HOUR=8
 
 totalwage=$(($WAGE_PER_HOUR * $FULL_TIME_HOUR))
  
 echo "The employee $employeename has a daily wage of $totalwage Rupees"
+}
