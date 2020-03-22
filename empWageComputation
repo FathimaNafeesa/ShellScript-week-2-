@@ -36,6 +36,7 @@ echo "The part time employee $employeename has a daily wage of $parttimewage Rup
 }
 
 #branch switchstatement
+
 echo " Please select your prefered option "
 echo " 1.To check employee attendance"
 echo " 2.To calculate daily wage"
